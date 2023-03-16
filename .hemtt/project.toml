@@ -1,0 +1,15 @@
+name = "ghostb"
+author = "YonV"
+prefix = "ghostb"
+mainprefix = "z"
+
+[files]
+include = [
+    "mod.cpp",
+    "README.md",
+    "LICENSE",
+    "3rdparty",
+    "AUTHORS.txt",
+    "gobp2_256_g.paa",
+    "gobp2_256.paa"
+]
