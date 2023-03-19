@@ -13,7 +13,7 @@ switch _mode do {
 		_local = switch tolower language do {
 			case "czech":		{localize "str_a3_cfgmarkers_flag_czechrepublic";};
 			case "french":		{localize "str_a3_cfgmarkers_flag_france";};
-			case "german": 		{_isUppercase = true; localize "str_a3_cfgmarkers_flag_germany";};
+			case "german": 		{_isUppercase = "true"; localize "str_a3_cfgmarkers_flag_germany";};
 			case "hungarian":	{localize "str_a3_cfgmarkers_flag_hungary";};
 			case "italian":		{localize "str_a3_cfgmarkers_flag_italy";};
 			//case "korean":	{localize "";};
@@ -21,7 +21,7 @@ switch _mode do {
 			case "polish":		{localize "str_a3_cfgmarkers_flag_poland";};
 			case "portuguese":	{localize "str_a3_cfgmarkers_flag_portugal";};
 			//case "russian":	{localize "";};
-			case "spanish":		{ _isUppercase = true; localize "str_a3_cfgmarkers_flag_spain";};
+			case "spanish":		{ _isUppercase = "true"; localize "str_a3_cfgmarkers_flag_spain";};
 			default {localize "str_a3_cfgmarkers_flag_usa";};
 		};
 

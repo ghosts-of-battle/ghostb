@@ -13,3 +13,19 @@ include = [
     "gobp2_256_g.paa",
     "gobp2_256.paa"
 ]
+
+[lint.sqf]
+enabled = true # Default: true
+exclude = [
+    "a3/3DEN/UI/macroexecs.inc"
+]
+
+[Rapify]
+exclude = [
+    "a3/3DEN/UI/macroexecs.inc"
+]
+
+[asc]
+enabled = true # Default: false
+exclude = [
+]

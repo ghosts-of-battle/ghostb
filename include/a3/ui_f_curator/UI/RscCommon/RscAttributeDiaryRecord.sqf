@@ -43,8 +43,8 @@ switch _mode do {
 					_xDisplayName = gettext (_x >> "displayName");
 					_xTexture = gettext (_x >> "texture");
 					_tvPicture = _ctrlImageTree tvadd [[_tvCategory],_xDisplayName];
-					_ctrlImageTree tvsetpicture [[_tvCategory,_tvPicture],_xTexture];	
-					_ctrlImageTree tvsetdata [[_tvCategory,_tvPicture],_xTexture];	
+					_ctrlImageTree tvsetpicture [[_tvCategory,_tvPicture],_xTexture];
+					_ctrlImageTree tvsetdata [[_tvCategory,_tvPicture],_xTexture];
 				} foreach (_x call bis_fnc_returnchildren);
 
 			} foreach ((_x >> "CfgDiaryPictures") call bis_fnc_returnchildren);
@@ -97,7 +97,7 @@ switch _mode do {
 		//--- Description updated
 		if (_newTitle != _title || _newText != _text) then {
 			[_unit,"RscAttributeDiaryRecord",[_newTitle,_newText]] call bis_fnc_setServerVariable;
-			_updated = true;
+			_updated = "true";
 		};
 
 		//--- Texture updated (stored independently for easier access)
@@ -106,7 +106,7 @@ switch _mode do {
 				_unit setvariable ["RscAttributeDiaryRecord_texture",_newTexture,true];
 				_unit setvariable ["RscAttributeDiaryRecord_textureCursel",_newCursel,true];
 				if (side _unit != sidelogic) then {_unit setobjecttextureglobal [0,_newTexture];};
-				_updated = true;
+				_updated = "true";
 			};
 			if (_updated) then {
 				_unit setvariable ["RscAttributeDiaryRecord_updated",true,true];

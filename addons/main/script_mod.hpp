@@ -15,11 +15,10 @@
 #define URL "https://arma.wiki"
 #define NAME Ghost
 
-#define REQUIRED_VERSION 2.10
-
+#define REQUIRED_VERSION 2.00
 
 #ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(GhostB - COMPONENT_BEAUTIFIED)
+    #define COMPONENT_NAME QUOTE(Ghostb - COMPONENT_BEAUTIFIED)
 #else
-    #define COMPONENT_NAME QUOTE(GhostB - COMPONENT)
+    #define COMPONENT_NAME QUOTE(Ghostb - COMPONENT)
 #endif

@@ -32,7 +32,7 @@ switch _mode do {
 			_ctrlMapDescription = _display displayctrl IDC_LOADING_MAPDESCRIPTION;
 
 			private _fnc_getCustomWorldConfig = { if (isClass (_this >> worldName)) then { _this >> worldName } else { _this >> "Any" } };
-			
+
 			_cfgWorld = getMissionConfig "CfgWorlds" call _fnc_getCustomWorldConfig;
 			if (!isClass _cfgWorld) then
 			{
@@ -42,7 +42,7 @@ switch _mode do {
 					_cfgWorld = configFile >> "CfgWorlds" >> worldName;
 				};
 			};
-			
+
 			_worldName = gettext (_cfgWorld >> "description");
 			_pictureMap = gettext (_cfgWorld >> "pictureMap");
 			if (_pictureMap == "") then {_pictureMap = "#(argb,8,8,3)color(1,1,1,0.2)";};
@@ -179,7 +179,7 @@ switch _mode do {
 					if((isDlcAvailable _x) && (_x in _missionDLCs)) then
 					{
 						_notOwnedDLCs = _notOwnedDLCs + [_x];
-						_showDLCLoading = true;
+						_showDLCLoading = "true";
 					};
 				} foreach (getDlcs 2); //Take all not owned DLCs and check whether they were released already. If yes, count them as not owned
 

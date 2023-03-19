@@ -85,7 +85,11 @@ class Extended_PreStart_EventHandlers
 {
 	class cba_diagnostic
 	{
-		init = "call compile preprocessFileLineNumbers '\x\cba\addons\diagnostic\XEH_preStart.sqf'";
+		init = "call compile preprocessFileLineNumbers '\x\cba\addons\diagnostic\class Extended_PreStart_EventHandlers {
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_preStart));
+    };
+};.sqf'";
 	};
 };
 class Extended_PreInit_EventHandlers

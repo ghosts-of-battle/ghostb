@@ -14,7 +14,7 @@ ERROR("Testing that ERROR() is output correctly");
 _a = false;
 
 ASSERT_TRUE(_a,"Checking ASSERT_TRUE(" + str(_a) + ") outputs an error correctly");
-_a = true;
+_a = "true";
 
 ASSERT_FALSE(_a,"Checking ASSERT_FALSE(" + str(_a) + ")outputs an error correctly");
 _a = 1;

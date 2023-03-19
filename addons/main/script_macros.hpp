@@ -1,5 +1,4 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
-#include "\z\ghostb\addons\main\script_macros.hpp"
 // #define DFUNC(module) TRIPLES(ADDON,fnc,module)
 #ifdef DISABLE_COMPILE_CACHE
     #undef PREP
@@ -46,7 +45,8 @@
 
 
 // GHOSTB Debug macros
-
+#include "script_debug.hpp"
+#include "config_macros.hpp"
 
 
 //This part includes parts of the CBA and ACE3 macro libraries
@@ -85,20 +85,20 @@
 #define ICON_INVENTORY "\a3\Modules_F_Curator\Data\portraitRespawnInventory_ca.paa"
 #define ICON_MEDICAL "x\zen\addons\context_actions\ui\medical_cross_ca.paa"
 #define ICON_OBJECT "x\zen\addons\modules\ui\edit_obj_ca.paa"
-#define ICON_PARADROP "x\zen\addons\modules\ui\heli_ca.paa"
+#define ICON_PARADROP "x\zen\addons\modules\ui\heli_ca.paa"//"\z\ace\addons\zeus\ui\Icon_Module_Zeus_ParadropCargo_ca.paa"
 #define ICON_PERSON "x\zen\addons\modules\ui\person_ca.paa"
 #define ICON_RADIO "\a3\Modules_F_Curator\Data\portraitRadio_ca.paa"
 #define ICON_REMOTECONTROL "\a3\modules_f_curator\data\portraitremotecontrol_ca.paa"
 #define ICON_TIME "\a3\Modules_F_Curator\Data\portraitTimeAcceleration_ca.paa"
 #define ICON_TRUCK "x\zen\addons\modules\ui\truck_ca.paa"
 #define ICON_TREE "\a3\modules_f\data\hideterrainobjects\icon32_ca.paa"
-#define ICON_UNCONSCIOUS "\z\ghostb\addons\zeus\ui\Icon_Module_Zeus_Unconscious_ca.paa"
+#define ICON_UNCONSCIOUS "\z\ace\addons\zeus\ui\Icon_Module_Zeus_Unconscious_ca.paa"
 #define ICON_WEATHER "\a3\3DEN\Data\Displays\Display3DEN\ToolBar\intel_ca.paa"
 
 #define ST_CENTER 2
 
-#define IDC_OK 1
-#define IDC_CANCEL 2
+#define IDC_OK 1 // emulate "OK" button
+#define IDC_CANCEL 2 // emulate "Cancel" button
 
 #define IDC_BUTTON_CLR 311010
 #define IDC_BUTTON_INC 311011
@@ -208,7 +208,7 @@
     class TransportWeapons {};
 
 
-    // LOADOUT DEFINES
+        // LOADOUT DEFINES
 
 #define TRANSPORT_MAGAZINE(id,qty) class _xx_##id { magazine = #id; count = qty; };
 #define TRANSPORT_ITEM(id,qty) class _xx_##id { name = #id; count = qty; };
@@ -221,6 +221,3 @@ class _xx_##id { \
     count = qty; \
 };
 
-
-#include "script_debug.hpp"
-#include "config_macros.hpp"

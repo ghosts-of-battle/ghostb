@@ -40,7 +40,7 @@ switch _mode do {
 			{
 				_symbol = switch _x do {
 					case 13: {_textParsed = _textParsed + _arrayBR;};
-					case 10: {_isLineBreak = true;};
+					case 10: {_isLineBreak = "true";};
 					case _symbolAsterisk: {
 						if (_isLineBreak) then {
 							_textParsed = _textParsed + _arrayBullet;

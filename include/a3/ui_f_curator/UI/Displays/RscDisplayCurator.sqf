@@ -341,10 +341,10 @@ switch _mode do {
 			};
 			case (_key in actionkeys 'help'): { //--- Show advanced hint (hijack of BIS_fnc_advHint)
 				with missionnamespace do {
-					BIS_fnc_advHint_HPressed = true;
+					BIS_fnc_advHint_HPressed = "true";
 					[true] call BIS_fnc_AdvHintCall;
 				};
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorPersonView'): { //--- Toggle unit view
 				if (cameraon == player && isNil {missionNamespace getVariable "BIS_curator_observedUnit"}) then {
@@ -373,11 +373,11 @@ switch _mode do {
 					("RscDisplayCurator" call bis_fnc_rscLayer) cuttext ["","black in"];
 					missionNamespace setVariable ["BIS_curator_observedUnit", nil];
 				};
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorNightvision'): { //--- Toggle vision mode
 				[getassignedcuratorlogic player,if (_ctrl) then {-1} else {+1}] call bis_fnc_toggleCuratorVisionMode;
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorCompass'): { //--- Toggle compass
 				showcuratorcompass !showncuratorcompass;
@@ -424,7 +424,7 @@ switch _mode do {
 					_pos = [_pos,_posZ * 2,direction curatorcamera + 180] call bis_fnc_relpos;
 					[_pos,_target] spawn bis_fnc_setcuratorcamera;
 				};
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorToggleInterface'): { //--- Screenshot mode
 				RscDisplayCurator_screenshotMode = !RscDisplayCurator_screenshotMode;
@@ -479,15 +479,15 @@ switch _mode do {
 				if (_ctrl && _shift) then {_showWatermark = false;};
 				_ctrlWatermark = _display displayctrl IDC_RSCDISPLAYCURATOR_WATERMARK;
 				_ctrlWatermark ctrlshow _showWatermark;
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorToggleEdit'): { //--- Switch section
 				["toggleTree",[_display displayctrl IDC_RSCDISPLAYCURATOR_MISSIONBARTITLE,false],""] call RscDisplayCurator_script;
-				_return = true;
+				_return = "true";
 			};
 			case (_key in actionkeys 'curatorToggleCreate'): { //--- Switch section
 				["toggleTree",[_display displayctrl IDC_RSCDISPLAYCURATOR_ADDBARTITLE,false],""] call RscDisplayCurator_script;
-				_return = true;
+				_return = "true";
 			};
 			case (_key == DIK_F1);
 			case (_key == DIK_F2);
