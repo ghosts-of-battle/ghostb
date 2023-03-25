@@ -98,13 +98,13 @@
 #define IGUI_ERROR_RGB			IGUI_ERROR_RGB_R,	IGUI_ERROR_RGB_G,	IGUI_ERROR_RGB_B
 #define IGUI_ERROR_COLOR		{IGUI_ERROR_RGB,IGUI_ERROR_RGB_A}
 
-//--- IGUI sixsfgtical ping color
-#define IGUI_SIXSFGTPING_RGB_R		"(profilenamespace getvariable ['IGUI_SIXSFGTPING_RGB_R',1.0])"
-#define IGUI_SIXSFGTPING_RGB_G		"(profilenamespace getvariable ['IGUI_SIXSFGTPING_RGB_G',0.8])"
-#define IGUI_SIXSFGTPING_RGB_B		"(profilenamespace getvariable ['IGUI_SIXSFGTPING_RGB_B',0.2])"
-#define IGUI_SIXSFGTPING_RGB_A		"(profilenamespace getvariable ['IGUI_SIXSFGTPING_RGB_A',1.0])"
-#define IGUI_SIXSFGTPING_RGB		IGUI_SIXSFGTPING_RGB_R,	IGUI_SIXSFGTPING_RGB_G,	IGUI_SIXSFGTPING_RGB_B
-#define IGUI_SIXSFGTPING_COLOR		{IGUI_SIXSFGTPING_RGB,IGUI_SIXSFGTPING_RGB_A}
+//--- IGUI Tactical ping color
+#define IGUI_TACTPING_RGB_R		"(profilenamespace getvariable ['IGUI_TACTPING_RGB_R',1.0])"
+#define IGUI_TACTPING_RGB_G		"(profilenamespace getvariable ['IGUI_TACTPING_RGB_G',0.8])"
+#define IGUI_TACTPING_RGB_B		"(profilenamespace getvariable ['IGUI_TACTPING_RGB_B',0.2])"
+#define IGUI_TACTPING_RGB_A		"(profilenamespace getvariable ['IGUI_TACTPING_RGB_A',1.0])"
+#define IGUI_TACTPING_RGB		IGUI_TACTPING_RGB_R,	IGUI_TACTPING_RGB_G,	IGUI_TACTPING_RGB_B
+#define IGUI_TACTPING_COLOR		{IGUI_TACTPING_RGB,IGUI_TACTPING_RGB_A}
 
 //--- HUD Text color (obsolete defines; ToDo: Replace with IGUI_TEXT_COLOR and IGUI_BCG_COLOR)
 #define CA_UI_HUD			IGUI_TEXT_COLOR

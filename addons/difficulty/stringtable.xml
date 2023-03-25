@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="GHOSTB">
+    <Package name="Difficulty">
+        <Key ID="STR_GHOSTB_Difficulty_DifficultyName">
+            <Original>Ghostb</Original>
+        </Key>
+        <Key ID="STR_GHOSTB_Difficulty_DifficultyDescription">
+            <Original>Custom Ghostb settings.</Original>
+            <Polish>Własne ustawienia Ghostb.</Polish>
+        </Key>
+    </Package>
+</Project>

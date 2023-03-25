@@ -13,3 +13,4 @@ PREP(GetValues);
 PREP(GetKeys);
 PREP(FindReplaceString);
 PREP(SafePos);
+PREP(IntLight);
