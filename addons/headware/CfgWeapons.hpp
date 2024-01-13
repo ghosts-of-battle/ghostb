@@ -2220,19 +2220,11 @@ class CfgWeapons {
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
-    class milgp_h_airframe_03_goggles_CB_hexagon: ItemCore {
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
     class milgp_h_airframe_04_CB_hexagon: ItemCore {
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
     class milgp_h_airframe_04_CB: ItemCore {
-        ace_hearing_protection = 0.7;
-        ace_hearing_lowerVolume = 0.05;
-    };
-    class milgp_h_airframe_04_khk_hexagon: ItemCore {
         ace_hearing_protection = 0.7;
         ace_hearing_lowerVolume = 0.05;
     };
